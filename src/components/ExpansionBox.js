@@ -49,7 +49,7 @@ function ExpansionBox(props) {
                     <div className="image-exp-container">
                         <div className="expand-bg align-items-center">
                             <p className="flex-grow-1 m-0">5 simple ways to get started with a more conscious way of living</p>
-                            <img src={CirclePlus} />
+                            <img src={CirclePlus} alt=''/>
                         </div>
                     </div>
                 </div>
