@@ -1,0 +1,217 @@
+body {
+    background-color: #dcd8cb;
+}
+
+.navbar-nav a {
+    color: #e3dec8;
+}
+
+.comp-logo {
+    width: 80px;
+    height: 48px;
+}
+
+.bg-image {
+    background-image: url('../assets/images/Hero_cleanup.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero-text {
+    position: absolute;
+    left: 14%;
+    top: 47%;
+    color: #e3dec8;
+    width: 32%;
+}
+
+.grid {
+    color: white;
+    font-family: serif;
+}
+
+.planet {
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    border-bottom: 2px solid white;
+    padding: 0% 2% 3% 2%;
+}
+
+.living {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.prod-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grifpara {
+    width: 43%;
+}
+
+@media (max-width: 767px) {
+    .living {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .prod-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .grifpara {
+        width: 100%;
+    }
+
+    .hero-text {
+        position: absolute;
+        left: 4%;
+        top: 22%;
+        color: #e3dec8;
+        width: 91%;
+        text-align: justify;
+        font-size: 49px;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 20% !important;
+        left: 5% !important;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-out;
+        text-align: left;
+    }
+
+    .text-overlay1 {
+        position: absolute;
+        top: 38% !important;
+        left: 5.5% !important;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-out;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-overlay {
+        position: absolute;
+        top: 20% !important;
+        left: 5% !important;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-out;
+        text-align: left;
+    }
+
+    .text-overlay1 {
+        position: absolute;
+        top: 24% !important;
+        left: 2.5% !important;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-out;
+        text-align: left;
+    }
+}
+
+
+.img-hover-zoom {
+    /* height: 300px;  */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom .img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover .img {
+    transform: scale(1.5);
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+    .img-hover-zoom:active .img {
+        transform: scale(1.5);
+        /* Adjust the scale as needed */
+    }
+}
+
+.plus {
+    bottom: 5%;
+    position: absolute;
+    /* left: -67px; */
+    /* top: 0; */
+    right: 5%;
+}
+
+
+/*  */
+.imgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-out;
+    text-align: left;
+}
+
+.image-wrapper:hover .text-overlay {
+    transform: translateY(0);
+}
+
+.imgContainer1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper1 {
+    width: 100%;
+}
+
+.text-overlay1 {
+    position: absolute;
+    top: 12%;
+    left: 1.5%;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-out;
+    text-align: left;
+}
+
+.image-wrapper1:hover .text-overlay1 {
+    transform: translateY(0);
+}
