@@ -35,11 +35,6 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-`;
 
 // const Gridimg = styled.div`
 //   display: grid;
